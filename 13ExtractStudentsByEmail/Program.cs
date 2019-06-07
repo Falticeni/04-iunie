@@ -23,8 +23,7 @@ namespace _13ExtractStudentsByEmail
                                  where student.Marks.Contains(10)
                                  select new { Name = student.FirstName + " " + student.LastName, Marks = string.Join(", ", student.Marks) };
             Console.WriteLine(string.Join("\n\n", StudentEminent));
-
-            Console.ReadKey();
+            Console.WriteLine();
         }
     }
 }
